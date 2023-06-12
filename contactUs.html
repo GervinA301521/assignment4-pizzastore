@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="icon" type="image/x-icon" href="./images/pizza.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header section -->
+  <div class="top-container">
+    <header>
+      <h1>Contact Us</h1>
+      <h2>Get in touch with us</h2>
+    </header>
+  </div>
+  <br>
+
+  <!-- Main section -->
+  <main>
+    <!-- Contact Form -->
+    <form action="mailto:info@geraldspizzeria.com" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br><br>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="40" maxlength="200" required></textarea>
+      <br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+      <br>
+      <p>Or call us at +1-1111111111</p>
+    </form>
+  </main>
+  <br>
+
+  <!-- Footer section -->
+  <footer>
+    <p><strong><i>&copy; 2023 Pizza Place. All rights reserved.</i></strong></p>
+  </footer>
+</body>
+</html>

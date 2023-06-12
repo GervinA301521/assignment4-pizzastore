@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Order Form</title>
+  <link rel="icon" type="image/x-icon" href="./images/pizza.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <div class="top-container">
+      <h1>Gerald's Crispy Crust Pizzeria</h1>
+      <h2>Deliciously Satisfying Pizza, Every Bite a Delight!</h2>
+      <h3><i>Order Your Pizza</i></h3>
+    </div>
+  </header>
+
+  <br>
+
+  <!-- Main section -->
+  <main>
+    <!-- Form for Contact Information -->
+    <form action="ty.html" method="GET">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <br>
+        <label for="fName">First Name:</label>
+        <input type="text" id="fName" name="fName" required>&nbsp;
+
+        <label for="lName">Last Name:</label>
+        <input type="text" id="lName" name="lName" required>
+        
+        <br><br>
+
+        <label for="address">Delivery Address:</label><br>
+        <textarea id="address" name="address" rows="5" cols="40"  required></textarea>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{10}" required>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Pizza Order Info</legend>
+        <br>
+        <!-- Form for Pizza Quantity -->
+        <label for="numberPizza">Pizza Quantity:</label>
+        <input type="number" id="numberPizza" name="numberPizza" min="1" max="10" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <!-- Form for Pizza Sizes -->
+        <label for="pizzaSize">Sizes:</label>
+        <select id="pizzaSize" name="pizzaSize" required>
+          <option value="">Choose Size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+        <br><br>
+
+        <!-- Form for Pizza Shape -->
+        <label for="pizzaShape">Choose Shape:</label>
+        <input type="radio" id="round-shape" name="pizzaShape" value="round" required>
+        <label for="round-shape">Round</label>&nbsp;
+        <input type="radio" id="square-shape" name="pizzaShape" value="square">
+        <label for="square-shape">Square</label>
+        <br><br>
+
+        <!-- Form for Pizza Toppings -->
+        <label for="toppings">Toppings:</label>
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>&nbsp;
+        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label>&nbsp;
+        <input type="checkbox" id="blackOlives" name="toppings" value="blackOlives">
+        <label for="blackOlives">Black Olives</label>&nbsp;
+        <input type="checkbox" id="bacon" name="toppings" value="bacon">
+        <label for="bacon">Bacon</label>&nbsp;
+        <input type="checkbox" id="cheese" name="toppings" value="cheese">
+        <label for="cheese">Cheese</label>&nbsp;
+        <input type="checkbox" id="sausage" name="toppings" value="sausage">
+        <label for="sausage">Sausage</label>&nbsp;
+        <input type="checkbox" id="pineApple" name="toppings" value="pineApple">
+        <label for="pineApple">Pineapple</label>
+        <br><br>
+
+        <!-- Form for Type of Crust -->
+        <label for="crust-type">Type of Crust:</label>&nbsp;
+        <input type="radio" id="thickCrust" name="crust-type" value="thickCrust" required>
+        <label for="thickCrust">Thick Crust</label>&nbsp;
+        <input type="radio" id="thinCrust" name="crust-type" value="thinCrust">
+        <label for="thinCrust">Thin Crust</label>
+      </fieldset>
+<br>
+         <!-- Form for Drinks -->
+         <fieldset>
+            <legend>Drinks</legend>
+            <br>
+            <label for="coke">Coke Quantity:</label>
+            <input type="number" id="coke" name="coke" min="0" max="10">
+            &nbsp;&nbsp;
+            <label for="pepsi">Pepsi Quantity:</label>
+            <input type="number" id="pepsi" name="pepsi" min="0" max="10">
+            &nbsp;&nbsp;
+            <label for="sprite">Sprite Quantity:</label>
+            <input type="number" id="sprite" name="sprite" min="0" max="10">
+           &nbsp;&nbsp;
+            <label for="appleJuice">Apple Juice Quantity:</label>
+           <input type="number" id="appleJuice" name="appleJuice" min="0" max="10">
+           &nbsp;&nbsp;
+            <label for="orangeJuice">Orange Juice Quantity:</label>
+           <input type="number" id="orangeJuice" name="orangeJuice" min="0" max="10">
+            <br><br>
+          </fieldset>
+          <br>
+
+      <br>
+
+      <!-- Form for Delivery type -->
+      <fieldset>
+        <legend>Delivery Type</legend>
+        <br>
+        <input type="radio" id="selfPickup" name="deliverOption" value="selfPickup" required>
+        <label for="takeOut">Self Pick Up</label>&nbsp;&nbsp;
+        <input type="radio" id="delivery" name="deliverOption" value="delivery">
+        <label for="delivery">Delivery</label>&nbsp;&nbsp;
+        <input type="radio" id="dineIn" name="deliverOption" value="dineIn">
+        <label for="dineIn">Dine In</label>
+      </fieldset>
+
+      <br>
+
+      <!-- Form for Additional Notes -->
+      <fieldset>
+        <legend>Additional Request</legend>
+        <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+      </fieldset>
+
+      <br>
+
+      <center>
+        <input type="submit" value="Place Your Order">
+        <input type="reset" value="Clear">
+      </center>
+    </form>
+<br>
+    <section>
+        <h2>Contact Us</h2>
+        <p>For any inquiries or assistance, please feel free to get in touch with us:</p>
+        <p>Phone: +1-1111111111</p>
+        <p>Email: <a href="./contactUs.html">info@geraldspizzeria.com</a></p>
+      </section>
+
+  </main>
+
+  <!-- Image above the footer -->
+  <p>
+    <center>
+      <img src="./images/pizzaFooter.png" alt="Yummy pizza" height="130px">
+    </center>
+  </p>
+
+  <!-- Footer Section -->
+  <footer>
+    <center>
+      <p><strong><i>&copy; 2023 Pizza Place. All rights reserved.</i></strong></p>
+    </center>
+  </footer>
+</body>
+</html>

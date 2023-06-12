@@ -1,0 +1,43 @@
+/* css styles for the top portion of the site */
+.Top-Container {
+    font-family: sans-serif;
+    text-align: center;
+    color: red;
+  }
+  
+  /* Css Designing h1 for ty.html */
+  h1 {
+    color: red;
+  }
+  
+  /* Css design for main Content for fonts */
+  main {
+    font-family: sans-serif;
+    color: red;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  /* CSS Design for the footer */
+  footer {
+    padding-top: 1%;
+    margin-top: -3%;
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* CSS Design to set up the picture background as wallpaper */
+  body {
+    background-image: url("./images/pizzaBodyTrans.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* CSS design for links */
+  a:visited,
+  a:link {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
